@@ -1,0 +1,75 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+  font-family: 'lato', 'sans-serif';
+}
+
+h1 h2 h3 {
+  font-family: 'oswald','sans-serif';
+}
+
+.intro {
+	width: 98%;
+	height: 650px;
+	padding: 10px;
+	margin: 0 auto;
+	position: relative;
+  background-color: @color-claro;
+  .sombra-caja;
+	&__imagen {
+		width: 98%;
+		position: absolute;
+    color: white;
+		img {
+			width: 100%;
+			height: 624px;
+			object-fit: cover;
+		}
+	}
+
+  &__contenido {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 156px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+  }
+
+  &__categoria { 
+    .oswald;
+    color: fade(@color-claro, 50%);
+  }
+
+  &__titulo {
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+
+  &__autor {
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    color: white;
+    color: fade(@color-claro, 50%);
+    img {
+      width: 60px;
+      height: 50px;
+      float: left;
+      padding-right: 10px;
+      border-radius: 100%;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+}
